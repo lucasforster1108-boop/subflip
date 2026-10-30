@@ -1,0 +1,5 @@
+vless://11111111-2222-3333-4444-555555555555@203.0.113.10:51776?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.apple.com&fp=chrome&pbk=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&type=tcp&sid=89d9857e#JP-Example
+vless://22222222-3333-4444-5555-666666666666@cdn.example.com:8443?encryption=none&security=tls&sni=cdn.example.com&fp=chrome&type=ws&host=cdn.example.com&path=%2Fws-path#US-WS-Example
+vmess://eyJ2IjoiMiIsInBzIjoiVk1FU1MtRXhhbXBsZSIsImFkZCI6IjE5OC41MS4xMDAuMjMiLCJwb3J0IjoiNDQzIiwiaWQiOiIzMzMzMzMzMy00NDQ0LTU1NTUtNjY2Ni03Nzc3Nzc3Nzc3NyIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiJ2bWVzcy5leGFtcGxlLmNvbSIsInBhdGgiOiIvdm1lc3MiLCJ0bHMiOiJ0bHMiLCJzbmkiOiJ2bWVzcy5leGFtcGxlLmNvbSJ9
+trojan://p4ssw0rd@198.51.100.77:443?sni=trojan.example.com#Trojan-Example
+ss://YWVzLTI1Ni1nY206cGFzc3dvcmQxMjM@203.0.113.99:8388#SS-Example

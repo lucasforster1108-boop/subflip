@@ -1,0 +1,86 @@
+{
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "JP-Example",
+      "server": "203.0.113.10",
+      "server_port": 51776,
+      "uuid": "11111111-2222-3333-4444-555555555555",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "short_id": "89d9857e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "US-WS-Example",
+      "server": "cdn.example.com",
+      "server_port": 8443,
+      "uuid": "22222222-3333-4444-5555-666666666666",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.example.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "websocket",
+        "path": "/ws-path",
+        "headers": {
+          "Host": "cdn.example.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "VMESS-Example",
+      "server": "198.51.100.23",
+      "server_port": 443,
+      "uuid": "33333333-4444-5555-6666-77777777777",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "vmess.example.com"
+      },
+      "transport": {
+        "type": "websocket",
+        "path": "/vmess",
+        "headers": {
+          "Host": "vmess.example.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "Trojan-Example",
+      "server": "198.51.100.77",
+      "server_port": 443,
+      "password": "p4ssw0rd",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.example.com"
+      }
+    },
+    {
+      "type": "ss",
+      "tag": "SS-Example",
+      "server": "203.0.113.99",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "password123"
+    }
+  ]
+}
